@@ -33,3 +33,24 @@ function changeUrl(){
 		url[i].setAttribute("href",new_href[i].value);
 	}
 }
+
+//changetext
+
+$(function(){
+	$(".text > input").click(function(){
+		var text1 = $("#banner_text").val();
+		var text2 = $("#tab2").val();
+		var text3 = $("#tab3").val();
+		var text4 = $("#submit").val();
+		var text5 = $("#more_job").val();
+		var text6 = $("#contacts").val();
+		//var iframe = $(document.getElementById("fra").contentWindow.document.body);
+		//alert($("tbody",window.frames["fra"].document).html());
+		$("#fra").contents().find(".dxy_td:eq(0)").text(text1);
+		$("#fra").contents().find("td > div:eq(1)").text(text2);
+		$("#fra").contents().find("td > div:eq(4)").text(text3);
+		$("#fra").contents().find("td > div:eq(3) > a > strong").text(text4);
+		$("#fra").contents().find("td > a:eq(2)").text(text5);
+		$("#fra").contents().find("div.devicewidth").html(text6);
+	});
+});
