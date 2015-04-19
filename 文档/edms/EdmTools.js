@@ -44,6 +44,8 @@ $(function(){
 		var text4 = $("#submit").val();
 		var text5 = $("#more_job").val();
 		var text6 = $("#contacts").val();
+		var text7 = $("#tab1").val();
+		var text8 = $("#meeting_context").val();
 		//var iframe = $(document.getElementById("fra").contentWindow.document.body);
 		//alert($("tbody",window.frames["fra"].document).html());
 		$("#fra").contents().find(".dxy_td:eq(0)").text(text1);
@@ -52,5 +54,10 @@ $(function(){
 		$("#fra").contents().find("td > div:eq(3) > a > strong").text(text4);
 		$("#fra").contents().find("td > a:eq(2)").text(text5);
 		$("#fra").contents().find("div.devicewidth").html(text6);
+		$("#fra").contents().find("td > div:eq(0)").html(text7);
+		$("#fra").contents().find("table.devicewidth:eq(3) > tbody > tr:eq(1) > td").text(text8);
+
+
+
 	});
 });
